@@ -18,7 +18,7 @@
   <!-- Sign-up form start -->
   
   <div class="container">
-    <div class="container-wrapper">
+    <div class="container-wrapper" id="subscribe">
       <div class="items">
         <h1>
           Stay updated!
@@ -35,9 +35,9 @@
           Email Address
           <span id="valid" class="email-req">Valid email required</span>
         </span>
-        <form action="success.html">
+        <form>
           <input id="email-input" onchange="validate_email()" class="inputbox" type="email" placeholder="email@company.com"/>
-            <button class="sub-butt">
+            <button id="sub-butt" type="button" onclick="successEmail(event)" class="sub-butt">
               Subscribe to monthly newsletter
             </button>
         </form>
@@ -46,11 +46,29 @@
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="img-banner">
       </div>
     </div>
-
-  
-  
+    
+    <div class="container display-none" id="success">
+      <div class="success-wrapper" >
+          <div class="success-items">
+              <img src="./assets/images/icon-success.svg" width="15%" alt="success-final">
+              <h1 class="thanks">Thanks for subscribing!</h1>
+              <p>  
+                  A confirmation email has been sent to <span id="success-email"></span>
+                  Please open it and click the button inside to confirm your subscription.
+              </p>
+          </div>
+          <div class="success-items">
+              <a href="index.html">
+                  <button type="button" class="dismiss-but">
+                      Dismiss Message
+                  </button>                
+              </a>
+          </div>
+      </div>        
   </div>
-
+    
+  </div>
+      
 
 
   <!-- Sign-up form end -->

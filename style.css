@@ -147,12 +147,17 @@ button{
     border-radius: 30px;
     padding: 60px;
     position: relative;
+    top: 0;
 }
 .success-items{
     padding: 20px;
 }
 .dismiss-but,.sub-butt{
     width: 100%;    
+}
+
+.display-none{
+    display: none;
 }
 
 @media (max-width: 768px){
